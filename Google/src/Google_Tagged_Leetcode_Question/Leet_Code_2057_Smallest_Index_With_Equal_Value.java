@@ -1,0 +1,11 @@
+package Google_Tagged_Leetcode_Question;
+
+public class Leet_Code_2057_Smallest_Index_With_Equal_Value {
+    public int smallestEqual(int[] nums) {
+        for(int i=0;i<nums.length;i++){
+            if(i % 10 == nums[i])
+                return i;
+        }
+        return -1;
+    }
+}
